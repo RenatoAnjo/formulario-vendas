@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Cadastro de Veículos</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <p>Cadastre seu veículo para vender muito mais rápido!</p>
+      </div>
+      <div class="conteudo-container">
+        <p>Cadastro de Veículos</p>
+        <div>
+          <h1>Venda fácil seu veículo!</h1>
+          <p>
+            Descreva as características do seu veículo e marque todas os
+            opicionais e características que ele possui
+          </p>
+          <form action="post">
+            <label for="name">Título do anúncio:</label> <br />
+            <input
+              type="text"
+              id="text"
+              value="Defina um título para o seu veículo"
+              required
+            />
+            <br />
+            <label for="preco">Preço do Veículo:</label><br />
+            <input
+              type="number"
+              id="preco"
+              value="Digite o valor em R$"
+              required
+            />
+            <br />
+            <label for="mensagem">Descrição:</label> <br />
+            <input
+              type="textarea"
+              id="mensagem"
+              value="Descreva seu Veículo"
+              required
+            />
+            <label for="unico-dono">Único dono?</label>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
