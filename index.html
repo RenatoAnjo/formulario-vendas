@@ -4,51 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
     <title>Cadastro de Veículos</title>
   </head>
   <body>
-    <main>
-      <div>
-        <p>Cadastre seu veículo para vender muito mais rápido!</p>
+    <div class="container">
+      <div class="header">
+        <h3>Cadastre seu Veículo para vender mais rápido !!!</h3>
       </div>
-      <div class="conteudo-container">
-        <p>Cadastro de Veículos</p>
-        <div>
-          <h1>Venda fácil seu veículo!</h1>
+      <div class="form-container">
+        <div class="form-header">
+          <p>Cadastro</p>
+        </div>
+        <div class="form-body">
+          <h1 class="form-title">Venda fácil seu veículo !!!</h1>
           <p>
             Descreva as características do seu veículo e marque todas os
-            opicionais e características que ele possui
+            opcionais e característcas que ele possui
           </p>
-          <form action="post">
-            <label for="name">Título do anúncio:</label> <br />
-            <input
-              type="text"
-              id="text"
-              value="Defina um título para o seu veículo"
-              required
-            />
-            <br />
-            <label for="preco">Preço do Veículo:</label><br />
-            <input
-              type="number"
-              id="preco"
-              value="Digite o valor em R$"
-              required
-            />
-            <br />
-            <label for="mensagem">Descrição:</label> <br />
-            <input
-              type="textarea"
-              id="mensagem"
-              value="Descreva seu Veículo"
-              required
-            />
-            <label for="unico-dono">Único dono?</label>
+          <form action="#" method="post">
+            <div class="box-input">
+              <label for="title"
+                >Título do anúncio: <span class="required-fild">*</span>
+              </label>
+              <!-- for na label significa de qual input é essa label -->
+              <input
+                type="text"
+                name="title"
+                id="title"
+                class="block"
+                placeholder="Defina o título para o seu veículo"
+                minlength="1"
+                maxlength="30"
+                required
+              />
+              <!-- minlength e maxlength limitamos em minimo e maximo de letras, id é para alterar no css e tambem no js -->
+            </div>
+            <div class="box-input">
+              <label for="preco"
+                >Preço do Veículo: <span class="required-fild">*</span></label
+              >
+              <input
+                type="number"
+                name="preco"
+                id="preco"
+                required
+                class="block"
+              />
+            </div>
+            <div class="box-input">
+              <label for="descricao"
+                >Descrição: <span class="required-fild">*</span></label
+              >
+              <input
+                type="textarea"
+                name="descricao"
+                id="descricao"
+                required
+                class="block"
+                cols="30"
+                rows="10"
+                placeholder="Descreva o máximo possível sobre seu veículo"
+              />
+            </div>
+            <div class="box-input">
+              <label for="unico-dono"
+                >Único dono: <span class="required-fild">*</span></label
+              >
+              <select id="unico-dono" name="unico-dono" required>
+                <option value>Selecione...</option>
+                <option value="1">SIM</option>
+                <option value="0">NÃO</option>
+              </select>
+            </div>
+            <div class="box-input">
+              <label for="marca"
+                >Marca: <span class="required-fild">*</span></label
+              >
+              <input
+                type="text"
+                name="marca"
+                id="marca"
+                required
+                class="block"
+                placeholder="Digite a marca do seu veículo"
+              />
+            </div>
+            <div class="box-input">
+              <label for="modelo"
+                >Modelo: <span class="required-fild">*</span></label
+              >
+              <input
+                type="text"
+                name="modelo"
+                id="modelo"
+                required
+                class="block"
+                placeholder="Digite o modelo do seu veículo"
+              />
+            </div>
+            <div class="box-input">
+              <label for="data"
+                >Data da compra do veículo:
+                <span class="required-fild">*</span></label
+              >
+              <input type="date" name="data" id="data" required />
+            </div>
+            <div class="box-input">
+              <p>Câmbio: <span class="required-fild">*</span></p>
+              <input type="radio" id="manual" name="cambio" />
+              <!-- name deve ser igual nos dois input radio -->
+              <label for="manual">Manual</label>
+              <input type="radio" id="automatico" name="cambio" />
+              <label for="automatico">Automático</label>
+            </div>
+            <div class="box-input"></div>
           </form>
         </div>
       </div>
-    </main>
+    </div>
   </body>
 </html>
