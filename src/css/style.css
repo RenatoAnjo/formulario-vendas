@@ -6,3 +6,27 @@
 h3 {
   color: white;
 }
+
+.container .form-container {
+  background-color: white;
+  margin-left: 250px ;
+  margin-right: 250px;
+  margin-top: -80px;
+}
+
+.form-header p {
+  text-transform: uppercase;
+  color: red;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px;
+  border-bottom: solid 1px black;
+}
+
+.form-body {
+  padding: 50px;
+}
+
+.block {
+  margin: 10px;
+}
