@@ -1,32 +1,28 @@
-.container .header {
-  background-color: blueviolet;
-  padding: 50px;
+/*Cabecalho da pagina */
+.header {
+  height: 180px;
+  padding: 20px;
+  background-color: #673AB7;
 }
 
-h3 {
-  color: white;
+.header h3 {
+  color: #FFF;
+  margin-top: 0;
 }
 
-.container .form-container {
-  background-color: white;
-  margin-left: 250px ;
-  margin-right: 250px;
-  margin-top: -80px;
-}
-
-.form-header p {
-  text-transform: uppercase;
-  color: red;
-  font-size: 30px;
-  text-align: center;
-  padding: 5px;
-  border-bottom: solid 1px black;
-}
-
+/*Corpo do FOrmulario*/
 .form-body {
-  padding: 50px;
+  padding:30px;
+}
+
+.form-title {
+  margin: 0;
+}
+
+.required-fild {
+  color: red;
 }
 
 .block {
-  margin: 10px;
+  display: block;
 }
